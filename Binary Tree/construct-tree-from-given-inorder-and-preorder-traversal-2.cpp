@@ -49,7 +49,7 @@ TreeNode *buildTree(int preorder[], int inorder[], int n)
 
         node = NULL;
         while (st.size() > 0 && in < n &&
-               st.top()->val == inorder[in])
+                st.top()->val == inorder[in])
         {
             node = st.top();
             st.pop();
